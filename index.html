@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy eid</title>
+    
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(245, 53, 187), rgb(248, 151, 106), rgb(170, 238, 156), rgb(247, 217, 219));
+            color: rgb(236, 229, 230);
+            font-family: 'Bellota', cursive;
+            padding: 0 2%;
+            background-position: center;
+        }
+        h1{
+            color: blueviolet;
+        }
+        .container
+{
+    text-align: center;
+    margin: 17% 6%;
+    font-size: 3em;
+
+    </style>
+</head>
+<body>
+        <div class="container">
+            <p>
+                Happy Eid <span> </span>
+            </p>
+            <p>
+                please enter your name
+            </p>
+            <input type="text" id="f_name" placeholder="first name">
+            <input type="text" id="l_name" placeholder="last name">
+            <br>
+            <button onclick="c_name()">CLICK</button>
+            <br>
+            
+        </div>
+        <script>
+        let c;
+function c_name()
+{
+    let f_name=document.querySelector('#f_name').value;
+    let l_name=document.querySelector('#l_name').value;
+    c=f_name+" "+l_name;
+    document.querySelector('p span').innerHTML=c;
+}
+// clear
+function clear()
+{
+    let f_name=document.querySelector('#f_name').value=" ";
+    let l_name=document.querySelector('#l_name').value=" ";
+    c=f_name+" "+l_name;
+    document.querySelector('p span').innerHTML=c;
+}
+</script>
+
+</body>
+</html>
